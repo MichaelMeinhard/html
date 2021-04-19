@@ -1,0 +1,36 @@
+table {
+    width: 100%;
+    font-size: 130%;
+}
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+}
+dt {
+    font-weight: 800;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+dd {
+    font-style: italic;
+    margin-top: 10px;
+    margin-left: 0;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+  }
+.bila {
+    background-color: white;
+}
+.oranzova {
+background-color: coral;
+}
+caption {
+    font-size: 130%;
+    margin-left: -60%;
+}
+dl {
+    text-align: center;
+}

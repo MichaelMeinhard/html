@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabulka v HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="table.css">
 </head>
 
 <body>
     <header>
         <h1>Tabulky v HTML</h1>
+        <ul>
+            <li><a class="active" href="table.html">Tabulky</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="fotogalerie.html">Fotogalerie</a></li>
+        </ul>
     </header>
     <main>
-        <h2>Slavná osobnost: Adolf Hitler</h2>
-        <table border="1">
-            <caption>Vizitka slavné osobnosti</caption>
+        <h2>Slavná osobnost: Karel Gott</h2>
+        <table>
+            <caption><b>Vizitka slavné osobnosti</b></caption>
             <thead>
                 <tr>
                     <th>Portrét</th>
@@ -25,30 +32,59 @@
             </thead>
             <tbody>
                 <tr>
-                    <td>Foto</td>
-                    <td colspan="2">Jméno a příjmení</td>
-                    <td>Díla</td>
+                    <td class="bila" rowspan="3"> <img src="img/KarelGott.png" height="400px" width="300px"
+                            alt="Karel Gott"></td>
+                    <td class="oranzova" colspan="2"><strong>Karel Gott</strong></td>
+                    <td class="oranzova" rowspan="4">
+                        <p>Srdce nehasnou</p>
+                        <p>Ta pravá</p>
+                        <p>Být stále mlád</p>
+                        <p>Zůstanu svůj</p>
+                        <p>Kávu si osladím</p>
+                        <p>Stokrát chválím čas</p>
+                    </td>
                 </tr>
                 <tr>
-                    <td>Narození</td>
-                    <td>Umrtí</td>
+                    <td class="oranzova">Narození - 14. července 1939</td>
+                    <td class="oranzova">Umrtí - 1. října 2019</td>
                 </tr>
                 <tr>
-                    <td colspan="2">Stručná charakteristika</td>
+                    <td class="oranzova" rowspan="2" colspan="2">
+                        Legendární český šlágrový zpěvák, herec a malíř Karel Gott. V letech 1965–2019
+                        se prodalo 50 milionů nosičů hudebních alb s jeho nahrávkami, což z něj učinilo
+                        nejúspěšnějšího
+                        českého interpreta. Během kariéry vydal 293 sólových alb na domácí scéně i v zahraničí.
+                        Zpíval
+                        nejen česky, ale i německy, latinsky (Adeste fideles), anglicky, italsky a rusky. V anketách
+                        Zlatý slavík a později Český slavík získal celkem 42 ocenění.
+                    </td>
                 </tr>
                 <tr>
-                    <td>Popisek fotky</td>
-                </tr>
+                    <td class="bila">Legendární zpěvák Karel Gott</td>
             </tbody>
             <tfoot>
                 <tr>
-                    <td>Odkaz na wikipedii</td>
+                    <td class="bila" colspan="4">Odkaz na wikipedii: <a
+                            href="https://cs.wikipedia.org/wiki/Karel_Gott">https://cs.wikipedia.org/wiki/Karel_Gott</a>
+                    </td>
                 </tr>
             </tfoot>
         </table>
+        <h2>Značky a atributy tabulky</h2>
+        <dl>
+            <dt>colspan</dt>
+            <dd>Atribut zajišťující rozpětí přes několik sloupců</dd>
+            <dt>rowspan</dt>
+            <dd>Atribut zajišťující rozpětí přes několik řádků</dd>
+            <dt>table</dt>
+            <dd>Značka ohraničující celou tabulku</dd>
+            <dt>thead</dt>
+            <dd>Záhlaví tabulky</dd>
+        </dl>
     </main>
-    <footer></footer>
-
+    <footer>
+        &copy;2021 - SŠPU Opava - třída IT1 - autor: Michael Meinhard
+    </footer>
 </body>
 
 </html>

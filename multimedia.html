@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabulka v HTML</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="multimedia.css">
+</head>
+
+<body>
+    <header>
+        <h1>Multimedia a HTML</h1>
+        <ul>
+            <li><a href="table.html">Tabulky</a></li>
+            <li><a class="active" href="multimedia.html">Multimedia</a></li>
+            <li><a href="fotogalerie.html">Fotogalerie</a></li>
+        </ul>
+    </header>
+    <main>
+<h2>Obrázky v HTML</h2>
+    <figure>
+        <img src="img/KarelGott.png" alt="Karel Gott">
+        <figcaption>Český zpěvák Karel Gott</figcaption>
+    </figure>
+<h2>Audio a video v HTML</h2>
+<figure>
+<video width="720" height="480" controls>
+    <source src="media/pánvička.mp4" type="video/mp4">
+    <source src="media/pánvička.mp4" type="video/ogg">
+    Váš prohlížeč nepodporuje značku videa.
+</video>
+<figcaption>Pánvička</figcaption>
+</figure>
+<figure>
+    <audio controls>
+        <source src="media/cmelak.mp3" type="audio/ogg">
+        <source src="media/cmelak.mp3" type="audio/mpeg">
+        Váš prohlížeč nepodporuje zvukový prvek.
+      </audio>
+      <figcaption>Čmálak ve volné přírodě</figcaption>
+</figure>
+<h2>Video z YouTube</h2>
+<figure>
+    <iframe width="720" height="480" src="https://www.youtube.com/watch?v=-lPXPc667gw">
+    </iframe>
+    <figcaption>Video na youtube</figcaption>
+</figure>
+    </main>
+    <footer>
+        &copy;2021 - SŠPU Opava - třída IT1 - autor: Michael Meinhard
+    </footer>
+</body>
+
+</html>
